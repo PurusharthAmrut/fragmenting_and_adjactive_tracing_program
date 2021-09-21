@@ -1,0 +1,22 @@
+{
+  "processor":[],
+  "battery":["(?P<backup>ba*?c*?k*?.*?up\\w*?)","(?P<consumption>consum\\w*?)","(?P<life1>li(f|v)e\\w*?)","(?P<life2>dura\\w+?)"],
+  "sd_card":[],
+  "speakers":["(?P<location1>locat\\w*?)","(?P<location2>posi\\w+?n\\w*?)"],
+  "camera":["(?P<quality>q\\w*?li\\w{2,})","(?P<mode>modes?)","(?P<resolution>res+?ol+?u\\w+?n)"],
+  "display":["(?P<quality>q\\w*?li\\w{2,})","(?P<brightness>brig?h?te?nes+)","(?P<sensitivity>se+ns\\wt+\\wv\\w*?)","(?P<contrast>(c|k)o+?ntr?a+?s\\w)"],
+  "ui":["(?P<updates>up.*?dat\\w*?)"],
+  "storage":[],
+  "network":[],
+  "sensors":[],
+  "software":[],
+  "wifi":["(?P<calls>call\\w*?)"],
+  "bluetooth":["(?P<calls>call\\w*?)","(?P<audio1>(ear|head).*?phones?)","(?P<audio2>head.*?sets?)","(?P<audio3>spe*?a*?kers?)"],
+  "security":["(?P<patch>pat?ch\\w*?)","(?P<update>up+?dat\\w*?)"],
+  "internet":["(?P<speed>spe*?d\\w*?)"],
+  "hardware":["(?P<quality>q\\w*?li\\w{2,})"],
+  "performance":[],
+  "heating":[],
+  "audio":["(?P<quality>q\\w*?li\\w{2,})"],
+  "generic":[]
+}

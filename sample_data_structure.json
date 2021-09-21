@@ -1,0 +1,49 @@
+{
+    "_id":1,
+    "review_text":"The camera quality is good, the display resolution and touch is nice. The battery backup is extremely bad.",
+    "date":"18.06.2020",
+    "fragments":[
+        {
+            "frag_text":"The camera quality is good, the display resolution and touch is nice",
+            "frag_no":1,
+            "unid_np_present":false,
+            "unid_np":[]
+        },
+        {
+            "frag_text":"The battery backup is extremely bad",
+            "frag_no":2,
+            "unid_np_present":false,
+            "unid_np":[]
+        }
+    ],
+    "frag_details":[
+        {
+            "category":"camera",
+            "subcategory":["quality"],
+            "cat_id":1,
+            "subcat_id":[1],
+            "sentiment":"positive",
+            "adjective":["good"],
+            "frag_no":1
+        },
+        {
+            "category":"display",
+            "subcategory":["resolution","touch"],
+            "cat_id":2,
+            "subcat_id":[2,3],
+            "sentiment":"positive",
+            "adjective":["nice"],
+            "frag_no":1
+        },
+        {
+            "category":"battery",
+            "subcategory":["backup"],
+            "cat_id":3,
+            "subcat_id":[4],
+            "sentiment":"extremely negative",
+            "adjective":["extremely","bad"],
+            "frag_no":2
+        }
+    ],
+    "review_tags":["camera","quality","display","resolution","touch","good","battery","backup","nice","bad"]
+}

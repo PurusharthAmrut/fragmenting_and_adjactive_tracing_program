@@ -1,0 +1,15 @@
+{
+  "processor":["(?P<gpu>g.?p.?u.?\\w?)"],
+  "battery":["(?P<charging>charg\\w*?)"],
+  "speakers":["(?P<volume1>)vol*?um*?e\\w?","(?P<volume2>loud\\w{,4})","(?P<bass>ba+?s+?)"],
+  "camera":["(?P<photos1>photo\\w*?)","(?P<photos2>imag\\w{,3})","(?P<videos>v(e|i)d(e|i)o\\w*?)","(?P<shutter>shut+?er+)","(?P<autofocus>autof*?ocus\\w*?)","(?P<wide_angle>wide *?angles?)","(?P<bokeh>bo+?keh*?\\w*?)","(?P<pixels>pi(x|cs)el\\w*?)","(?P<selfies>self(y|i)\\w*?)"],
+  "display":["(?P<brightness>brig?h?te?nes+)","(?P<refresh_rate>refresh\\w*? *?rat\\w*?)","(?P<resolution>res+?ol+?uti*?o*?ns?)"],
+  "storage":["(?P<ram>r.?a.?m.?)","(?P<rom>r.?o.?m.?)"],
+  "network":["(?P<sim>s.?i.?m.?)","(?P<calls>call\\w*?)","(?P<signal>signals?)","(?P<gps>)g.?p.?s.?"],
+  "sensors":["(?P<fp_sensor>finger *?prints? (?=scan\\w*?|sens\\w*?|read\\w*?))\\w+","(?P<proximity_sensor>proximity (?=sens.rs?)\\w+?)","(?P<gyroscope>gyroscop\\w*?)"],
+  "software":["(?P<update>up+?dat\\w*?)","(?P<apps>apps?)","(?P<os1>o.?s.?)","(?P<os2>op\\w*? *?sys*?tems?)"],
+  "internet":["(?P<data_usage>dat*?a *?us*?a*?ge*?)","(?P<mobile_data1>[1-5] ?g)","(?P<mobile_data2>mo*?bi*?le*? da*?ta*?)"],
+  "hardware":["(?P<weight>we*?i*?gh\\w*?)","(?P<water1>i.?p.? ?\\d\\d)","(?P<water2>water*? ?pro\\w+?)","(?P<glass>gla+?ss\\w*?)","(?P<body>bod(y|i))"],
+  "performance":["(?P<speed1>lag\\w{,4})","(?P<speed2>spe*?d\\w*?)"],
+  "generic":["?(P<sar_rating>s.?a.?r.?)"]
+}

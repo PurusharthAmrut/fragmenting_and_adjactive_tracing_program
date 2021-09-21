@@ -1,0 +1,25 @@
+asinn library
+
+5/3 noun window
+Hinglish reviews google translate
+awwweeessssooooommmmeeee - no more than twice repetition in English language
+
+look at the conjunctions which divide 2 different fragment reviews
+
+The nltk tree construction time grows exponentially with each additional word.
+Could we get some SM app reviews, cuz they'd be more specific
+"one and a half day" cannot be taken into the same fragment cuz of the coordinating conjunction
+
+Manual tagging going on. Has given a lot of insight and many hard to detect bugs.
+Conjunction omission
+spellchecking
+translator instability
+category dictionary expanded
+>300 reviews tagged but 5000 needed
+Great website built by Neelaksh. Collaborating on unpacking level.
+Unprocessed text can't be retained in >95% of the final subfragments
+
+do add the names of new phones to the ignore_words.csv file if you launch them
+also add new processor names ('exynos' already added)
+justification for returning cat_fragments:
+anyway the subfragments are becoming too big. We can sacrifice adjectivisation for such big fragments

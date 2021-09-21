@@ -1,0 +1,18 @@
+{
+  "processor":["(?P<gpu>g.?p.?u.?\\w?)"],
+  "battery":["(?P<charging>charg\\w*?)","(?P<backup>\\d*?.*?mah)"],
+  "speakers":["(?P<volume1>)vol*?um*?e\\w?","(?P<volume2>loud\\w{,4})","(?P<bass>ba+?s+?)"],
+  "camera":["(?P<photos1>photo\\w*?)","(?P<photos2>imag\\w{,3})","(?P<videos>v(e|i)d(e|i)o\\w*?)","(?P<zoom>zoom\\w*?)","(?P<focus>\\w*?focus\\w*?)","(?P<shutter>shut+?er+)","(?P<autofocus>autof*?ocus\\w*?)","(?P<wide_angle>wide.*?angles?)","(?P<bokeh>bo+?keh*?\\w*?)","(?P<pixels>pi(x|cs)el\\w*?)","(?P<selfies>self(y|i)\\w*?)","(?P<slow_motion>\\w*(?<=super) slow (motion|came?ra))"],
+  "display":["(?P<brightness>brig?h?te?nes+?)","(?P<refresh_rate>refresh\\w*?.*?rat\\w*?)","(?P<resolution>res+?ol+?uti*?o*?ns?)"],
+  "ui":["(?P<one_ui1>one.*?u\\W?i\\W?)","(?P<one_ui2>u\\W?i\\W?.?one)"],
+  "storage":["(?P<ram>r.?a.?m.?)","(?P<rom>r.?o.?m.?)"],
+  "network":["(?P<sim>s.?i.?m.?)","(?P<calls>call\\w*?)","(?P<signal>signals?)","(?P<gps>)g.?p.?s.?","(?P<antenna>ant\\w+?na)"],
+  "sensors":["(?P<fp_sensor>finger.*?prints? (?=scan\\w*?|sens\\w*?|read\\w*?))\\w+","(?P<proximity_sensor>proximity (?=sens.rs?)\\w+?)","(?P<gyroscope>gyroscop\\w*?)","(?P<accelerometer>a\\w+?le*?rometer)"],
+  "software":["(?P<update>up+?dat\\w*?)","(?P<apps>apps?)","(?P<os1>o.?s.?)","(?P<os2>op\\w*?.*?sys*?tems?)"],
+  "wifi":["(?P<hotspot>hot.*?spot\\w*?)"],
+  "internet":["(?P<data_usage>dat*?a.*?us*?a*?ge*?)","(?P<mobile_data1>[1-5].?g)","(?P<mobile_data2>mo*?bi*?le*? da*?ta*?)","(?P<mobile_data3>l\\.?t\\.?e\\.?)"],
+  "hardware":["(?P<weight>we*?i*?gh\\w*?)","(?P<water1>i.?p.?.?\\d\\d)","(?P<water2>water*?.?pro\\w+?)","(?P<glass>gla+?ss\\w*?)","(?P<body>bod(y|i))"],
+  "performance":["(?P<speed1>lag\\w{,4})","(?P<speed2>spe*?d\\w*?)"],
+  "audio":["(?P<music>mu?s+?ic\\w*?)","(?P<externals1>(ear|head).*?phones?)","(?P<externals2>head.*?sets?)"],
+  "generic":["(?P<sar_rating>s[.,]?a[.,]?r[.,]?)"]
+}

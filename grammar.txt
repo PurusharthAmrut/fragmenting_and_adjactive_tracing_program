@@ -1,0 +1,15 @@
+grammar = r"""NPA: {<RB.*>*<JJ.?>+<NN.*?>+}
+NPB: {<CD>*?<NN.*?>+<[^,\.]*?>*?<JJ.?><VBN>?}
+NPC: {<NN.*?|CD>{2,}}
+NPD: {<NN.*?><IN><[^,\.]*?>*?<NN.*?><VB.?><[^,\.]*?>*?<JJ.?>}
+NPE: {<DT>?<NN.*?><VB.?><[^,\.]*?>*?(<NP[ABC]>|<NN.*?>)}
+NPF: {<NP[AC]>+?<[^,\.]*?>*?<NN.*?>}
+NPG: {<NPB><[^,\.]*?>*?<NN.*?>}
+NPH: {<NPA><[^,\.]*?>*?<JJ.?>}
+NPI: {<NPH><VB.?|IN|DT|PRP\$?>*?<NP[ABC]>}
+NPJ: {<NP[ABC]>(<VB.?|IN|DT|MD|PRP\$?>*?<NP[ABCDEGH]>)+}"""
+
+grammar = r"""NPA: {<DT>?<RB.?>*<JJ.?>+<NN.*?>+}
+NPB: {<DT|CD>?<NN.*?>+<[^,\.]*?>*?<JJ.?|RB.?><RB.?>?}
+NPC: {<NN.*?>{2,}}
+NPB1: {<NPB><,>(<JJ.?>|(?=<NN.?><,>)<NN.?>)}"""
