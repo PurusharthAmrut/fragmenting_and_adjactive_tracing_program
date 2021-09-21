@@ -1,2 +1,5 @@
-# sentiment-analyser
-AI engine to analyse review sentiments and categorize them.
+This is part of a larger project to categorize reviews and analyse their sentiments.
+A review can contain multiple sentiments directed towards multilpe objects. Feeding the whole review to the sentiment analyzer will simply average over all the sentiments and give a not so useful result. This algorithm acts as a pre-processor, breaking down reviews into fragnents which talk about just one thing and find the adjectives used to describe that thing.
+For fulfilling this purpose, a multi-staged algorithm is implemented in the nat-program (based on my noun-adjective tracing algorithm) which breaks down every customer review into small fragments, tags each fragment with the relevant categories, and in between it also traces the adjectives for each category or subcategory. So the fragmentation and adjective tracing happens intermittently simply because it is a more efficient mechanism. Finally, consecutive fragments, which may seem to have semantic co-dependence are rejoined, thereby constructing a more meaningful fragment.
+All the decision making (like the fragment breakpoints, adjective tracing and rejoining decisions) is done based on grammar rules constructed after a lot of hit and trial. The RegexpParser of the NLTK library is used for implementing these grammar rules.
+Category keywords have a suite of regular expressions stored in three (.csv or .json) files corresponding to categories, dependent subcategories and independent dubcategories.
